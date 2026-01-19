@@ -14,7 +14,6 @@
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-markdown": "^9.0.1",
-    "@clerk/nextjs": "^4.29.6",
     "lucide-react": "^0.312.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",

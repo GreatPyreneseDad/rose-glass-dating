@@ -4,6 +4,7 @@ Configuration Management
 
 from pydantic_settings import BaseSettings
 from functools import lru_cache
+from typing import Optional
 
 
 class Settings(BaseSettings):
@@ -12,20 +13,20 @@ class Settings(BaseSettings):
     # Anthropic
     anthropic_api_key: str
 
-    # Stripe
-    stripe_secret_key: str
-    stripe_webhook_secret: str
+    # Stripe (Optional for MVP)
+    stripe_secret_key: Optional[str] = None
+    stripe_webhook_secret: Optional[str] = None
     stripe_price_id_starter: str = "price_starter"
     stripe_price_id_standard: str = "price_standard"
     stripe_price_id_pro: str = "price_pro"
 
-    # Clerk (Auth)
-    clerk_secret_key: str
-    clerk_publishable_key: str | None = None
+    # Clerk (Auth) - Optional for MVP, uses dev mode
+    clerk_secret_key: Optional[str] = None
+    clerk_publishable_key: Optional[str] = None
 
-    # Supabase
-    supabase_url: str
-    supabase_service_key: str
+    # Supabase (Optional for MVP, can run without DB)
+    supabase_url: Optional[str] = None
+    supabase_service_key: Optional[str] = None
 
     # App
     app_url: str = "http://localhost:3000"

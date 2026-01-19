@@ -52,3 +52,37 @@ class UserCredits(BaseModel):
     user_id: str
     credits: float
     last_updated: datetime
+
+
+class ReflectionPrompts(BaseModel):
+    """Reflection prompts for user after analysis"""
+    observation_prompt: str = Field(..., description="Prompt asking what user notices")
+    resonance_prompt: str = Field(..., description="Prompt asking what resonates")
+    intention_prompt: str = Field(..., description="Prompt asking what they want to share")
+
+
+class AnalysisWithPromptsResponse(BaseModel):
+    """Analysis result with reflection prompts (Phase 1)"""
+    success: bool
+    analysis: str
+    reflection_prompts: ReflectionPrompts
+    usage: UsageMetrics
+    remaining_credits: float
+    analysis_id: str
+
+
+class CoCreateRequest(BaseModel):
+    """Request to co-create response (Phase 2)"""
+    analysis_id: str = Field(..., description="ID of original analysis")
+    user_observation: str = Field(..., description="What the user noticed")
+    user_resonance: str = Field(..., description="What feels true for the user")
+    user_intention: str = Field(..., description="What they want to share")
+    conversation_context: Optional[str] = Field(None, description="Ongoing conversation context")
+
+
+class CoCreateResponse(BaseModel):
+    """Co-created response"""
+    success: bool
+    suggested_message: str = Field(..., description="Co-created message integrating user input")
+    usage: UsageMetrics
+    remaining_credits: float
