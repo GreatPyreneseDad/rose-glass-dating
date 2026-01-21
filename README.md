@@ -28,6 +28,48 @@ It **embraces**:
 - Uncertainty and ambiguity as features
 - Dignity and autonomy of all intelligence forms
 
+### 🤲 The Two Hands Principle
+
+**Core architectural requirement** (applies to ALL Rose Glass applications):
+
+Every Rose Glass application involves **two separate things held in two separate hands**:
+
+| **Hand 1: What I Perceive About THEM** | **Hand 2: What Is True For YOU** |
+|----------------------------------------|----------------------------------|
+| Translation of the other               | Expression of the self           |
+| System's analysis                      | User's authentic perspective     |
+| Observation                            | Participation                    |
+
+**The system can inform both hands.**
+**The system cannot close the hands together.**
+
+That is where the human lives. That is the part that cannot be automated without losing what matters.
+
+#### Why This Matters
+
+When a system takes both hands and merges them into a single "optimized output," it:
+1. **Removes agency** - User becomes executor of system's construction, not author of their own coherence
+2. **Enables extraction** - Understanding without self-expression becomes surveillance
+3. **Betrays translation** - Translation requires two parties present; automating one side creates performance, not communication
+4. **Collapses multiplicity** - Multiple valid interpretations become one "optimal" path
+
+#### In Practice
+
+**The system MUST turn to you and ask what is true for you before generating any output that will be transmitted to another person.**
+
+This is not optional. This is architectural.
+
+**Three-Phase Flow:**
+1. **PERCEPTION** - System analyzes their profile/message through Rose Glass
+2. **REFLECTION** (MANDATORY) - System asks: "What do YOU notice? What resonates? What do you want to express?"
+3. **CO-CREATION** - System helps you articulate your truth, calibrated to their communication style
+
+Understanding without self-expression is surveillance.
+Self-expression without understanding is noise.
+Connection requires both.
+
+*For complete documentation, see [UNIVERSAL_UPDATE_TWO_HANDS.md](UNIVERSAL_UPDATE_TWO_HANDS.md)*
+
 ## Quick Start
 
 ### Prerequisites
